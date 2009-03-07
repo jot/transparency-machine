@@ -48,7 +48,7 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_skeleton-app_session',
+    :session_key => '_rewiredstate_session',
     :secret      => '0c80200bd075bf7e94402c407b0d95273bae185d142e9b112b23ac64250a550f7fdca5e331663ae3fae6b7126490b87720474d7ed2ad05422dfc4046d844d3ce'
   }
 
