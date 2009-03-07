@@ -23,9 +23,9 @@ role :db,  "rewiredstate.inudadev.com", :primary => true
 set :application, "rewiredstate"
 set :deploy_to, "/var/www/apps/rewiredstate"
 set :user, 'deploy'
-set :password, "DEPLOY_PASSWORD"
+set :password, "4zCJoTXh"
 set :runner, 'deploy'
-set :sudo, "sudo -p DEPLOY_PASSWORD:"
+set :sudo, "sudo -p 4zCJoTXh:"
 set :rails_env, "production"
 
 default_run_options[:pty] = true
@@ -88,7 +88,7 @@ task :after_update_code, :roles => :app do
   buffer['production']['adapter'] = "mysql"
   buffer['production']['database'] = "rewiredstate_production"
   buffer['production']['username'] = "root"
-  buffer['production']['password'] = "MYSQL_PASSWORD"
+  buffer['production']['password'] = "ojK393D8"
   buffer['production']['host'] = "localhost"
 
   put YAML::dump(buffer), "#{release_path}/config/database.yml", :mode => 0664
