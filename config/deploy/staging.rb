@@ -7,10 +7,10 @@
 # be used to single out a specific subset of boxes in a particular role, like
 # :primary => true.
 
-set :domain, "skeleton-staging.inudadev.com"
-role :web, "skeleton-staging.inudadev.com"
-role :app, "skeleton-staging.inudadev.com"
-role :db,  "skeleton-staging.inudadev.com", :primary => true
+set :domain, "rewiredstate-staging.inudadev.com"
+role :web, "rewiredstate-staging.inudadev.com"
+role :app, "rewiredstate-staging.inudadev.com"
+role :db,  "rewiredstate-staging.inudadev.com", :primary => true
 
 # ==============================================================================
 # REQUIRED VARIABLES
@@ -20,8 +20,8 @@ role :db,  "skeleton-staging.inudadev.com", :primary => true
 # correspond to. The deploy_to path must be the path on each machine that will
 # form the root of the application path.
 
-set :application, "skeleton-staging"
-set :deploy_to, "/var/www/apps/skeleton-staging"
+set :application, "rewiredstate-staging"
+set :deploy_to, "/var/www/apps/rewiredstate-staging"
 set :user, 'deploy'
 set :password, "DEPLOY_PASSWORD"
 set :runner, 'deploy'
@@ -29,7 +29,7 @@ set :sudo, "sudo -p DEPLOY_PASSWORD:"
 set :rails_env, "staging"
 
 default_run_options[:pty] = true
-set :repository,  "git@inuda.unfuddle.com:inuda/skeleton.git"
+set :repository,  "git@inuda.unfuddle.com:inuda/rewiredstate.git"
 set :scm, "git"
 set :scm_password, "NMRNIe" #This is your custom users password
 set :scm_user, "inuda_deploy"
@@ -44,7 +44,7 @@ set :deploy_via, :remote_cache
 # =============================================================================
 # APACHE OPTIONS
 # =============================================================================
-set :apache_server_name, "skeleton-staging.inudadev.com"
+set :apache_server_name, "rewiredstate-staging.inudadev.com"
 set :apache_ctl, "/etc/init.d/apache2"
 set :apache_proxy_port, 80
 set :apache_proxy_servers, 4
@@ -59,7 +59,7 @@ set :apache_proxy_address, "127.0.0.1"
 # set :mongrel_port, 70000
 # set :mongrel_address, apache_proxy_address
 # set :mongrel_environment, "staging"
-# set :mongrel_conf, "/etc/mongrel_cluster/skeleton-staging.yml"
+# set :mongrel_conf, "/etc/mongrel_cluster/rewiredstate-staging.yml"
 
 # =============================================================================
 # MYSQL OPTIONS
@@ -85,7 +85,7 @@ task :after_update_code, :roles => :app do
 
   # Populate staging element
   buffer['staging']['adapter'] = "mysql"
-  buffer['staging']['database'] = "skeleton_staging"
+  buffer['staging']['database'] = "rewiredstate_staging"
   buffer['staging']['username'] = "root"
   buffer['staging']['password'] = "MYSQL_PASSWORD"
   buffer['staging']['host'] = "localhost"

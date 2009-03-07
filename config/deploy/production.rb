@@ -7,10 +7,10 @@
 # be used to single out a specific subset of boxes in a particular role, like
 # :primary => true.
 
-set :domain, "skeleton.inudadev.com"
-role :web, "skeleton.inudadev.com"
-role :app, "skeleton.inudadev.com"
-role :db,  "skeleton.inudadev.com", :primary => true
+set :domain, "rewiredstate.inudadev.com"
+role :web, "rewiredstate.inudadev.com"
+role :app, "rewiredstate.inudadev.com"
+role :db,  "rewiredstate.inudadev.com", :primary => true
 
 # ==============================================================================
 # REQUIRED VARIABLES
@@ -20,8 +20,8 @@ role :db,  "skeleton.inudadev.com", :primary => true
 # correspond to. The deploy_to path must be the path on each machine that will
 # form the root of the application path.
 
-set :application, "skeleton"
-set :deploy_to, "/var/www/apps/skeleton"
+set :application, "rewiredstate"
+set :deploy_to, "/var/www/apps/rewiredstate"
 set :user, 'deploy'
 set :password, "DEPLOY_PASSWORD"
 set :runner, 'deploy'
@@ -29,7 +29,7 @@ set :sudo, "sudo -p DEPLOY_PASSWORD:"
 set :rails_env, "production"
 
 default_run_options[:pty] = true
-set :repository,  "git@inuda.unfuddle.com:inuda/skeleton.git"
+set :repository,  "git@inuda.unfuddle.com:inuda/rewiredstate.git"
 set :scm, "git"
 set :scm_password, "NMRNIe" #This is your custom users password
 set :scm_user, "inuda_deploy"
@@ -45,7 +45,7 @@ set :deploy_via, :remote_cache
 # =============================================================================
 # APACHE OPTIONS
 # =============================================================================
-set :apache_server_name, "skeleton.inudadev.com"
+set :apache_server_name, "rewiredstate.inudadev.com"
 set :apache_ctl, "/etc/init.d/apache2"
 set :apache_proxy_port, 80
 set :apache_proxy_servers, 4
@@ -60,7 +60,7 @@ set :apache_proxy_address, "127.0.0.1"
 # set :mongrel_port, 70100
 # set :mongrel_address, apache_proxy_address
 # set :mongrel_environment, "production"
-# set :mongrel_conf, "/etc/mongrel_cluster/skeleton.yml"
+# set :mongrel_conf, "/etc/mongrel_cluster/rewiredstate.yml"
 
 # =============================================================================
 # MYSQL OPTIONS
@@ -86,7 +86,7 @@ task :after_update_code, :roles => :app do
 
   # Populate production element
   buffer['production']['adapter'] = "mysql"
-  buffer['production']['database'] = "skeleton_production"
+  buffer['production']['database'] = "rewiredstate_production"
   buffer['production']['username'] = "root"
   buffer['production']['password'] = "MYSQL_PASSWORD"
   buffer['production']['host'] = "localhost"
