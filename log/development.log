@@ -2016,3 +2016,77 @@ configured index for class AgendaDoc:
 Rendering template within layouts/application
 Rendering agenda_docs/search
 Completed in 25ms (View: 6, DB: 4) | 200 OK [http://localhost/search]
+
+
+Processing AgendaDocsController#search (for 127.0.0.1 at 2009-03-07 19:21:53) [GET]
+  Parameters: {"q"=>"school"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+configured index for class AgendaDoc:
+{:mysql_fast_batches=>true, :single_index=>false, :reindex_batch_size=>1000, :name=>:agenda_doc, :registered_models=>[], :ferret=>{:key=>:key, :or_default=>false, :path=>"/Users/jonathanmarkwell/temp/rewiredstate/index/development/agenda_doc", :handle_parse_errors=>true, :auto_flush=>true, :create_if_missing=>true, :default_field=>nil}, :raise_drb_errors=>false, :ferret_fields=>{:title=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:title, :term_vector=>:with_positions_offsets}, :content=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:content, :term_vector=>:with_positions_offsets}, :who=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:who, :term_vector=>:with_positions_offsets}}, :user_default_field=>nil, :enabled=>true, :fields=>[:title, :who, :content], :index_dir=>"/Users/jonathanmarkwell/temp/rewiredstate/index/development/agenda_doc"}
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAgendaDoc Columns (74.1ms)[0m   [0;1mSHOW FIELDS FROM `agenda_docs`[0m
+Rendering template within layouts/application
+Rendering agenda_docs/search
+Completed in 99ms (View: 5, DB: 75) | 200 OK [http://localhost/search?q=school]
+
+
+Processing AgendaDocsController#search (for 127.0.0.1 at 2009-03-07 19:22:32) [GET]
+  Parameters: {"q"=>"school"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+configured index for class AgendaDoc:
+{:mysql_fast_batches=>true, :single_index=>false, :reindex_batch_size=>1000, :name=>:agenda_doc, :registered_models=>[], :ferret=>{:key=>:key, :or_default=>false, :path=>"/Users/jonathanmarkwell/temp/rewiredstate/index/development/agenda_doc", :handle_parse_errors=>true, :auto_flush=>true, :create_if_missing=>true, :default_field=>nil}, :raise_drb_errors=>false, :ferret_fields=>{:title=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:title, :term_vector=>:with_positions_offsets}, :content=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:content, :term_vector=>:with_positions_offsets}, :who=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:who, :term_vector=>:with_positions_offsets}}, :user_default_field=>nil, :enabled=>true, :fields=>[:title, :who, :content], :index_dir=>"/Users/jonathanmarkwell/temp/rewiredstate/index/development/agenda_doc"}
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mAgendaDoc Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `agenda_docs`[0m
+Rendering template within layouts/results
+Rendering agenda_docs/search
+Completed in 21ms (View: 5, DB: 3) | 200 OK [http://localhost/search?q=school]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-07 19:22:32) [GET]
+
+
+ActionController::RoutingError (No route matches "/javascriptsthickbox.js" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)

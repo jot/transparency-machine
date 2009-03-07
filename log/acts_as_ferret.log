@@ -452,3 +452,24 @@ ar_options: {}
 [agenda_doc] 0 results from AR: []
 Query: meeting
 total hits: 0, results delivered: 0
+Will use remote index server which should be available at druby://localhost:9010
+index_for [AgendaDoc(id: integer, title: string, who: string, date: datetime, content: text, created_at: datetime, updated_at: datetime, strdate: string)]
+options: {:per_page=>2, :offset=>0, :page=>1, :limit=>2}
+ar_options: {}
+[agenda_doc] stored_fields: nil
+[agenda_doc] query: school
+-->+(title:school content:school who:school) +(class_name:AgendaDoc)
+[agenda_doc] now retrieving records from AR with options: {}
+[agenda_doc] 0 results from AR: []
+Query: school
+total hits: 0, results delivered: 0
+index_for [AgendaDoc(id: integer, title: string, who: string, date: datetime, content: text, created_at: datetime, updated_at: datetime, strdate: string)]
+options: {:per_page=>2, :offset=>0, :page=>1, :limit=>2}
+ar_options: {}
+[agenda_doc] stored_fields: nil
+[agenda_doc] query: school
+-->+(title:school content:school who:school) +(class_name:AgendaDoc)
+[agenda_doc] now retrieving records from AR with options: {}
+[agenda_doc] 0 results from AR: []
+Query: school
+total hits: 0, results delivered: 0

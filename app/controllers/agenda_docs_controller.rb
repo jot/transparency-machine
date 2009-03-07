@@ -18,7 +18,7 @@ class AgendaDocsController < ApplicationController
 		
 		#@search = Search.new params[:q], params[:page]
     @agenda_docs = AgendaDoc.find_with_ferret(params[:q], :page => @page, :per_page => 2)		
-		
+		render :layout => 'results'
 	end
 
   # GET /agenda_docs/1
