@@ -10,6 +10,17 @@ class MinutesDocsController < ApplicationController
     end
   end
 
+	def search
+
+		@query, @page = params[:q], (params[:page] or 1)	
+		#@products = Product.paginate_search params[:q], :page => @page, :per_page => 5
+		#@products = Product.find_by_contents(params[:q])
+		
+		#@search = Search.new params[:q], params[:page]
+    @minutes_doc = MinutesDoc.find_with_ferret(params[:q], :page => @page, :per_page => 2)		
+		
+	end
+
   # GET /minutes_docs/1
   # GET /minutes_docs/1.xml
   def show
