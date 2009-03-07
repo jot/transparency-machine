@@ -236,3 +236,47 @@ ar_options: {}
 Query: test
 total hits: 0, results delivered: 0
 Will use local index.
+Will use local index.
+using index in /Users/jonathanmarkwell/temp/rewiredstate/index/development/agenda_doc
+[agenda_doc] register class AgendaDoc with index agenda_doc
+[agenda_doc] default field list for index agenda_doc: [:title, :content, :who]
+index_for [AgendaDoc(id: integer, title: string, who: string, date: datetime, content: text, created_at: datetime, updated_at: datetime, strdate: string)]
+options: {:per_page=>2, :offset=>0, :page=>1, :limit=>2}
+ar_options: {}
+[agenda_doc] stored_fields: nil
+[agenda_doc] register class AgendaDoc with index agenda_doc
+[agenda_doc] refusing re-registration of class AgendaDoc
+index_for [AgendaDoc(id: integer, title: string, who: string, date: datetime, content: text, created_at: datetime, updated_at: datetime, strdate: string)]
+options: {:per_page=>2, :offset=>0, :page=>1, :limit=>2}
+ar_options: {}
+[agenda_doc] stored_fields: nil
+[agenda_doc] query: sdfsd
+-->+(title:sdfsd content:sdfsd who:sdfsd) +(class_name:AgendaDoc)
+[agenda_doc] now retrieving records from AR with options: {}
+[agenda_doc] 0 results from AR: []
+Query: sdfsd
+total hits: 0, results delivered: 0
+[agenda_doc] register class AgendaDoc with index agenda_doc
+[agenda_doc] refusing re-registration of class AgendaDoc
+index_for [AgendaDoc(id: integer, title: string, who: string, date: datetime, content: text, created_at: datetime, updated_at: datetime, strdate: string)]
+options: {:per_page=>2, :offset=>0, :page=>1, :limit=>2}
+ar_options: {}
+[agenda_doc] stored_fields: nil
+[agenda_doc] query: sdfsd
+-->+(title:sdfsd content:sdfsd who:sdfsd) +(class_name:AgendaDoc)
+[agenda_doc] now retrieving records from AR with options: {}
+[agenda_doc] 0 results from AR: []
+Query: sdfsd
+total hits: 0, results delivered: 0
+[agenda_doc] register class AgendaDoc with index agenda_doc
+[agenda_doc] refusing re-registration of class AgendaDoc
+index_for [AgendaDoc(id: integer, title: string, who: string, date: datetime, content: text, created_at: datetime, updated_at: datetime, strdate: string)]
+options: {:per_page=>2, :offset=>0, :page=>1, :limit=>2}
+ar_options: {}
+[agenda_doc] stored_fields: nil
+[agenda_doc] query: test
+-->+(title:test content:test who:test) +(class_name:AgendaDoc)
+[agenda_doc] now retrieving records from AR with options: {}
+[agenda_doc] 0 results from AR: []
+Query: test
+total hits: 0, results delivered: 0
