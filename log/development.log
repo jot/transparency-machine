@@ -2004,3 +2004,15 @@ configured index for class AgendaDoc:
 Rendering template within layouts/application
 Rendering agenda_docs/search
 Completed in 22ms (View: 5, DB: 3) | 200 OK [http://localhost/search?q=meeting]
+
+
+Processing AgendaDocsController#search (for 127.0.0.1 at 2009-03-07 19:15:38) [POST]
+  Parameters: {"q"=>"meeting", "find a topic"=>"find a topic"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+configured index for class AgendaDoc:
+{:mysql_fast_batches=>true, :single_index=>false, :reindex_batch_size=>1000, :name=>:agenda_doc, :registered_models=>[], :ferret=>{:key=>:key, :or_default=>false, :path=>"/Users/jonathanmarkwell/temp/rewiredstate/index/development/agenda_doc", :handle_parse_errors=>true, :auto_flush=>true, :create_if_missing=>true, :default_field=>nil}, :raise_drb_errors=>false, :ferret_fields=>{:title=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:title, :term_vector=>:with_positions_offsets}, :content=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:content, :term_vector=>:with_positions_offsets}, :who=>{:boost=>1.0, :index=>:yes, :store=>:no, :highlight=>:yes, :via=>:who, :term_vector=>:with_positions_offsets}}, :user_default_field=>nil, :enabled=>true, :fields=>[:title, :who, :content], :index_dir=>"/Users/jonathanmarkwell/temp/rewiredstate/index/development/agenda_doc"}
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAgendaDoc Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `agenda_docs`[0m
+Rendering template within layouts/application
+Rendering agenda_docs/search
+Completed in 25ms (View: 6, DB: 4) | 200 OK [http://localhost/search]
