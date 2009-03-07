@@ -1,0 +1,8 @@
+# Logfile created on Sat Mar 07 10:36:59 +0000 2009  [4;36;1mSQL (0.058277)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000957)[0m   [0mCREATE DATABASE `rewiredstate_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000585)[0m   [0mCREATE DATABASE `rewiredstate_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000480)[0m   [0mCREATE DATABASE `rewiredstate_production` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000445)[0m   [0mCREATE DATABASE `rewiredstate_staging` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
