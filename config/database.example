@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  database: myapp_development
+  username: root
+  password: 
+
+production:
+  adapter: mysql
+  database: myapp_production
+  username: root
+  password: 
+
+staging:
+  adapter: mysql
+  database: myapp_staging
+  username: root
+  password: 
+
+test:
+  adapter: mysql
+  database: myapp_test
+  username: root
+  password: 
