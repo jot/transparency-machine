@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @agenda_doc.title %>
+</p>
+
+<p>
+  <b>Who:</b>
+  <%=h @agenda_doc.who %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @agenda_doc.date %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%=h @agenda_doc.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_agenda_doc_path(@agenda_doc) %> |
+<%= link_to 'Back', agenda_docs_path %>

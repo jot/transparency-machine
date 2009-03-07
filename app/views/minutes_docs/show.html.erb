@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @minutes_doc.title %>
+</p>
+
+<p>
+  <b>Who:</b>
+  <%=h @minutes_doc.who %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @minutes_doc.date %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%=h @minutes_doc.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_minutes_doc_path(@minutes_doc) %> |
+<%= link_to 'Back', minutes_docs_path %>

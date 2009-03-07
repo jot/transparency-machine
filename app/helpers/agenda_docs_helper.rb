@@ -1,0 +1,2 @@
+module AgendaDocsHelper
+end

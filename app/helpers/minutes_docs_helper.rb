@@ -1,0 +1,2 @@
+module MinutesDocsHelper
+end

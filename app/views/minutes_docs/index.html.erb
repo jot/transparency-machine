@@ -1,0 +1,26 @@
+<h1>Listing minutes_docs</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Who</th>
+    <th>Date</th>
+    <th>Content</th>
+  </tr>
+
+<% for minutes_doc in @minutes_docs %>
+  <tr>
+    <td><%=h minutes_doc.title %></td>
+    <td><%=h minutes_doc.who %></td>
+    <td><%=h minutes_doc.date %></td>
+    <td><%=h minutes_doc.content %></td>
+    <td><%= link_to 'Show', minutes_doc %></td>
+    <td><%= link_to 'Edit', edit_minutes_doc_path(minutes_doc) %></td>
+    <td><%= link_to 'Destroy', minutes_doc, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New minutes_doc', new_minutes_doc_path %>

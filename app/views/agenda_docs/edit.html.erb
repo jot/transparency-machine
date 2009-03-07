@@ -1,0 +1,28 @@
+<h1>Editing agenda_doc</h1>
+
+<% form_for(@agenda_doc) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :who %><br />
+    <%= f.text_field :who %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @agenda_doc %> |
+<%= link_to 'Back', agenda_docs_path %>
