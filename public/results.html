@@ -1,0 +1,76 @@
+<html>
+<head>
+<link type='text/css' href="styles.css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="jquery-latest.pack.js"></script>
+<script type="text/javascript" src="thickbox.js"></script>
+<link rel="stylesheet" href="thickbox.css" type="text/css" media="screen" />
+<!-- Design by Jenni Lloyd - Code by Nik Fletcher -->
+
+<!-- Javascript Clear code taken from http://www.techtuts.com/forums/index.php?showtopic=74 as I suck as Javascript -->
+<script type="text/javascript">
+function ClearInput(value, id){
+var input = document.getElementById(id);
+if(value == input.value){
+input.value = '';
+}else{
+input.value = input.value;
+}
+}
+</script>
+<title>The Brighton Transparency Machine</title>
+</head>
+<body>
+	<div id="content">
+	<div id="masthead">
+	<form action="results.php" id="results-search" method="post">
+	<input type="text" id="search-box" title="search-term" name="search-term" class="search-box" value="what's going on in council meetings? " onclick="ClearInput('what\'s going on in council meetings? ', this.id);"/>
+	<input type="submit" title="find a topic" name="find a topic" value="find a topic" class="search-button" />
+	</form>
+	<h1>the transparency machine</h1><h2>your council. your say.</h2>
+	</div>
+	<div class="results">
+	<span class="searched-for">you searched for</span>
+	<h3>cycle paths</h3>
+	<p>we found 25 discussions in the minutes from 25 meetings and 3 committees</p>
+	<div class="relevant-committees">relevant committees</div>
+	<div class="result"><!-- Each element classed result is a result from the DB so can be looped :) -->
+		<span class="title"><a href="#" class="title-link" title="Environment & Community Safety Overview & Scrutiny Committee">Environment & Community Safety Overview & Scrutiny Committee</a> ~ 10 discussions</span>
+		<p>Next Meeting: <abbr class="dtstart" title="2009-04-24">24 April 2009, 11am</abbr></p>
+		<p>Deadline for proposing agenda items: 17 April 2009 <span class="do-stuff"><a href="#" class="calendar">add to calendar</a> | <a href="form.html?KeepThis=true&TB_iframe=true&height=400&width=600" title="Propose an Agenda Item" class="thickbox">propose agenda item</a></span></p>
+	</div>
+	<div class="result">
+		<span class="title"><a href="#" class="title-link" title="Environment & Community Safety Overview & Scrutiny Committee">Council Meeting</a> ~ 37 discussions</span>
+		<p>Next Meeting: <abbr class="dtstart" title="2009-04-24">24 April 2009, 11am</abbr></p>
+		<p>Deadline for proposing agenda items: 17 April 2009 <span class="do-stuff"><a href="#" class="calendar">add to calendar</a> | <a href="form.html?KeepThis=true&TB_iframe=true&height=400&width=600" title="Propose an Agenda Item" class="thickbox">propose agenda item</a></span></p>
+	</div>
+	<div class="result">
+		<span class="title"><a href="#" class="title-link" title="Environment & Community Safety Overview & Scrutiny Committee">Planning Applications Sub-Committee</a> ~ 3 discussions</span>
+		<p>Next Meeting: <abbr class="dtstart" title="2009-04-24">24 April 2009, 11am</abbr></p>
+		<p>Deadline for proposing agenda items: 17 April 2009 <span class="do-stuff"><a href="#" class="calendar">add to calendar</a> | <a href="form.html?KeepThis=true&TB_iframe=true&height=400&width=600" title="Propose an Agenda Item" class="thickbox">propose agenda item</a></span></p>
+	</div>
+	</div>
+	<div class="columns-bottom">
+		<div class="bottom right action"><h3>local action groups</h3><p>join in, get involved, make things better</p>
+		<ul>
+		<li><a href="#">Bicycles Brighton</a></li>
+		<li><a href="#">Critical Mass Bike Ride</a></li>
+		<li><a href="#">Low Tide Bike Ride</a></li>		
+		</ul>
+	</div>
+	<div class="bottom two"><h3>results from meeting minutes</h3><div class="result">
+	<span class="title">Environment & Community Safety Overview & Scrutiny Committee ~ <abbr class="dtstart" title="2009-02-19">19th February 2009</abbr></span>
+	<p>{Quote}</p>
+	<p>22 comments <span><a href="#">read full minutes</a> | <a href="#">add a comment</a></span></p>
+	</div>
+	<div class="result">
+	<span class="title">Council Meeting ~ <abbr class="dtstart" title="2008-01-04">4 January 2008</abbr></span>
+	<p>{Quote}</p>
+	<p>19 comments <span><a href="#">read full minutes</a> | <a href="#">add a comment</a></span></p>
+	</div>
+	</div>
+	</div>
+	<div class="clearer"></div>
+	</div>
+<p class="footer">Made for you by the <a href="http://rewiredstate.org/" title="Rewired State Website">Rewired State Brighton Outpost</a> March 2009.</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<link type='text/css' href="/stylesheets/styles.css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="/javascripts/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="/javascriptsthickbox.js"></script>
+<link rel="stylesheet" href="/stylesheets/thickbox.css" type="text/css" media="screen" />
+<!-- Design by Jenni Lloyd - Code by Nik Fletcher -->
+
+<!-- Javascript Clear code taken from http://www.techtuts.com/forums/index.php?showtopic=74 as I suck as Javascript -->
+<script type="text/javascript">
+function ClearInput(value, id){
+var input = document.getElementById(id);
+if(value == input.value){
+input.value = '';
+}else{
+input.value = input.value;
+}
+}
+</script>
+<title>The Brighton Transparency Machine</title>
+</head>
+<body>
+	<div id="content">
+    <%= yield %>
+	</div>
+<p class="footer">Made for you by the <a href="http://rewiredstate.org/" title="Rewired State Website">Rewired State Brighton Outpost</a> March 2009.</p>
+</body>
+</html>

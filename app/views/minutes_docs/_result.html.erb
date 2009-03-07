@@ -1,0 +1,5 @@
+	<div class="result"><!-- Each element classed result is a result from the DB so can be looped :) -->
+		<span class="title"><a href="#" class="title-link" title="<%= result.title %>"></a> ~ 10 discussions</span>
+		<p>Next Meeting: <abbr class="dtstart" title="2009-04-24"><%= result.date %></abbr></p>
+		<p>Deadline for proposing agenda items: <%= result.date %> <span class="do-stuff"><a href="#" class="calendar">add to calendar</a> | <a href="/form.html?KeepThis=true&TB_iframe=true&height=400&width=600" title="Propose an Agenda Item" class="thickbox">propose agenda item</a></span></p>
+	</div>

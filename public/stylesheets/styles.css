@@ -79,8 +79,13 @@ h3 {
 	padding-left: 0;
 }
 
-.proposals ul li {
-	list-style: none;margin-bottom: 10px;
+.proposals ul li, .action ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+#content div.columns-bottom div.bottom.right.action p {
+	margin-bottom: 10px;
 }
 
 .columns {
@@ -127,8 +132,19 @@ span.proposal-desc {
 	margin-left: 60px;
 }
 
+div.columns-bottom {
+	margin-top: 20px;
+}
+
 .result p {
-	font-size: 12px;
+	font-size: 13px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	color: #96979C;
+}
+
+a.title-link {
+	text-decoration: none;
 }
 
 #sidebar ul li {
@@ -159,6 +175,18 @@ span.proposal-desc {
 	margin-top: 0;
 	width: 300px;
 	font-size: 13px;
+}
+
+.action {
+	padding: 10px;
+	margin-top: 0;
+	width: 300px;
+	font-size: 13px;
+}
+
+a.calendar {
+	padding-left: 25px;
+	background: url(icon.png) no-repeat left;
 }
 
 .middle {
@@ -192,4 +220,47 @@ span.proposal-desc {
 
 .clearer {
 	clear: both;
+}
+
+.results {
+	padding: 10px;
+	background-color: #E6F0F8;
+	font-size: 14px;
+}
+
+span.title {
+	color: #96979C;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+div.result {
+	margin-bottom: 15px;
+	width: 600px;
+}
+
+span.do-stuff {
+	float: right;
+}
+
+div.relevant-committees {
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+div.results h3 {
+	margin-top: 5px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+span.searched-for {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.proposal {
+	width: 200px;
+	height: 200px;
 }
