@@ -12,7 +12,7 @@ namespace :db do
   namespace :create do
     task :all do
     	%w{development staging production test}.each do |env|
-    		ENV['COMMAND']="mysqladmin --password=MYSQL_PASSWORD --user=root create rewiredstate_#{env}"
+    		ENV['COMMAND']="mysqladmin --password=ojK393D8 --user=root create rewiredstate_#{env}"
     		invoke
     	end
     end
