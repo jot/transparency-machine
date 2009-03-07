@@ -94,3 +94,5 @@ ActionMailer::Base.smtp_settings = {
 # controller (or even per-controller):
 
 # consider_local "64.72.18.143", "14.17.21.25"
+
+require 'acts_as_ferret'

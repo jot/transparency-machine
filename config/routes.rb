@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :agenda_docs
+  map.resources :agenda_docs, :collection => { :search => :any }
 
   map.resources :minutes_docs
 

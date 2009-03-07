@@ -1,14 +1,47 @@
 <html>
-  <head>
-    <title>RewiredState</title>
-  </head>
+<head>
+<link type='text/css' href="/stylesheets/styles.css" rel="stylesheet" media="screen" />
+<!-- Design by Kenni Lloyd - Code by Nik Fletcher -->
 
-  <body>
-    <h2 style="text-align:center">
-      Hello world, from RewiredState
-    </h2>
-    <p style="text-align:center">
-      Delete public/index.html in your application and set up some routes.
-    </p>
-  </body>
+<!-- Javascript Clear code taken from http://www.techtuts.com/forums/index.php?showtopic=74 as I suck as Javascript -->
+<script type="text/javascript">
+function ClearInput(value, id){
+var input = document.getElementById(id);
+if(value == input.value){
+input.value = '';
+}else{
+input.value = input.value;
+}
+}
+</script>
+<title>The Brighton Transparency Machine</title>
+</head>
+<body>
+<div id="content">
+<div id="masthead">
+<h1>the transparency machine</h1><h2>your council. your say.</h2>
+</div>
+<div class="columns">
+<div class="column left"><h3>change the agenda</h3><p>propose topics for forthcoming committee meetings</p></div>
+<div class="column right"><h3>get involved</h3><p>find local interest groups, join in and make things better</p></div>
+<div class="column middle"><h3>share your views</h3><p>comment on council members' decisions</p></div>
+</div>
+<form action="results.php" id="search" method="post">
+<input type="text" id="search-box" title="search-term" name="search-term" class="search-box" value="what's going on in council meetings? " onclick="ClearInput('what\'s going on in council meetings? ', this.id);"/>
+<input type="submit" title="find a topic" name="find a topic" value="find a topic" class="search-button" />
+<p class="search-hint">e.g. <a href="#" title="schools">schools</a>, <a href="#" title="schools">transport</a>, <a href="#" title="schools">parks</a>, <a href="#" title="schools">crime</a></p>
+</form>
+<div class="columns-bottom">
+<div class="bottom right proposals"><h3>the peoples' proposals</h3><p>see proposals from the community - add your support or create your own</p>
+<ul>
+<li><a href="#">Repaint bus lane markings in North St</a><span class="proposal-desc">proposed by Jenni LLoyd ~ 6 supporters</span></li>
+<li><a href="#">Mark Gardner St one-Way</a><span class="proposal-desc">proposed by Jenni Lloyd ~ 27 supporters</span></li>
+</ul>
+<p><a href="#" title="see all">see all</a> | <a href="#" title="add your own">add your own</a></p></div>
+<div class="bottom two"><h3>topics over time</h3><p><img src="/images/trends.jpg" alt="Trends" title="Trends" width="512" /></p></div>
+</div>
+<div class="clearer"></div>
+</div>
+<p class="footer">Made for you by the <a href="http://rewiredstate.org/" title="Rewired State Website">Rewired State Brighton Outpost</a> March 2009.</p>
+</body>
 </html>
